@@ -1,4 +1,4 @@
-Neopro<- read.csv(file="c:/Users/user/Desktop/Cancer_reading.csv", header=TRUE, sep=",")
+Neopro<- read.csv(file="c:/Users/user/Desktop/weather_reading.csv", header=TRUE, sep=",")
 library(Boruta)
 # Decide if a variable is important or not using Boruta
 borutaoutput <- Boruta(Cancer_reading ~ ., data=na.omit(Neopro), doTrace=2)  # perform Boruta search
